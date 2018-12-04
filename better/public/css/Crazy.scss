@@ -1,0 +1,322 @@
+//----------------------------------------------------------primary reset
+html, body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    transform:none;
+}
+//----------------------------------------------------------Color Themes
+$White:#fff;
+$Primary: #7f7f7f;
+$Light:hsl(0,0%,93%);
+$LightText:hsl(0,0%,60%);
+$Text:#474747 ; 
+$Accent: #845007;
+$submit: #159957;
+//----------------------------------------------------------Custom Variables
+$Margin: 1.2rem;
+$Padding:1.2rem;
+$Center: auto;
+$transition: all 0.25s ease-in-out;
+
+//----------------------------------------------------------BTN MXin Section
+@mixin mybutton($color_1, $color_2) {
+    width: 250px;
+    margin: 10px;
+    margin-left:0;
+    border: 2px solid $color_1;
+    padding: 6px 24px;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+      color: $color_1;
+    background-color: $color_2;
+      transition: $transition;
+      &:hover {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+      }
+      &:active {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+          box-shadow: none;
+      }
+      &:focus, &:active:focus {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+          outline: 5px auto $color_1;
+      }
+      &:visited {
+          background-color: $color_1;
+          border-color: $color_1;
+      }
+  }
+  
+  .btn-submit {
+    @include mybutton($submit, $White);
+    width: auto;
+    margin: 20px 0px;
+  } 
+
+//----------------------------------------------------------Main Page Section
+
+
+html, body{
+background-color: $White;
+color:$Text;
+// background-color: $Text;
+}
+body{
+    opacity: .9;
+}
+.break{
+    display: inline-block;
+    background-color: $Accent;
+    width:100%;
+    height:5px;
+}
+.main .home{
+    margin: $Margin;
+}
+
+.imgInline{
+    height:auto;
+    text-align: right;
+    margin-left: 9rem;
+    margin-bottom: -4px;
+}
+.imgHome{
+    height:450px;
+    text-align:right;
+    margin-top: 3rem;
+}
+.writtingHome{ 
+    width: 450px;
+    text-align: left;
+    margin: 5rem;
+    margin-top:3rem;
+    margin-right: 8rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    vertical-align: 0%;
+    border:black 1px solid;
+}
+
+//----------------------------------------------------------Main Nav Section
+.mainNav{
+    position: fixed;
+    z-index: 1;
+    width:100%}
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        // position: -webkit-sticky; /* Safari */
+        // position: fixed;
+        top: 0;
+    }
+    
+    li {
+        float: right;
+    }
+    
+    li a {
+        display: block;
+        color: $White;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transform: scale(1,1);
+        transition: 1s;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover,.logoNavLink:hover {
+        background-color: $Accent;
+        transform: scale(1.1,1.1);
+        transition: 1s;
+    }
+    .logoNav{
+        float: left;
+        // margin-left: 10rem;
+        overflow: hidden;
+        background-color: $Text;
+        color: $White;
+        text-decoration: none;
+        display: block;
+    }
+    .logoNavLink{
+        
+        float: left;
+        color: $White;
+        background-color: $Text;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transform: scale(1,1);
+        transition: 1s;
+    }
+    
+//----------------------------------------------------------Main About Section
+.aboutHeaderLogo{
+    position:absolute;
+    top:30%;
+    left:10%;
+    transition-delay: .5s;
+    transition: 2s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    // padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: $White;
+
+  }
+.header.home{
+        // background-image: url("https://i0.wp.com/chapmanscoffee.com/wp-content/uploads/2017/03/qtq50-MTJvMq.jpeg?zoom=2&w=1080&ssl=1");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+  .footer {
+    background: $Text;
+  }
+  
+  .main {
+    display:flex;
+    text-align: left;
+    background: $White;
+    align-content: flex-start;
+
+  }
+  
+  .aside-1 {
+    background: $White;
+  }
+  
+  .aside-2 {
+    background: $White;
+  }
+.left{
+    max-width: 600px;
+    padding:$Padding;
+}
+.sneakyClose{
+    display:inline-grid;
+    align-content: center;
+    padding: $Padding;
+
+}
+// .sneakyClose item{
+//     align-self: flex-end;
+//     background-color: $Primary;
+// }
+#nameForm{
+    padding-right:1px;
+}
+.sneakyClose textarea{
+    width: 350px;
+    padding: $Padding;
+
+}
+.sneakyClose textarea, .sneakyClose input{
+        background-color: $Light;
+
+}
+
+
+
+//----------------------------------------------------------Footer Section
+#main-footer{
+    clear: both;
+}
+//----------------------------------------------------------Movie Section
+#myVideo{
+    // position: fixed;
+    // right: 0;
+    // bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    // z-index: -1;
+}
+//----------------------------------------------------------Media Query Section
+
+@media only screen and (max-width: 320px){
+    html{
+        margin:0;
+    }
+}
+@media only screen and (min-width:321px), (max-width: 424px){
+    html{
+        margin:0;
+    }
+}
+@media only screen and (min-width:425px), (max-width: 767px){
+    html{
+        margin:0;
+    }
+}
+@media only screen and (min-width:768px), (max-width: 980px){
+    html{
+        margin:0;
+    }
+}
+@media only screen and (min-width:981px), (max-width: 980px){
+
+}
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 9 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+//---------------------------------normal from here.
+
+//----------------------------------------------------------Animation Section
+.hidden {
+    opacity: 0;
+  }
+@keyframes fade-into {
+    from {opacity: 0; transform:translateX(-200px)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-into 2.4s;
+}
+@keyframes fade-intoR {
+    from {opacity: 0; transform:translateX(200px)}
+    to {opacity: 1;}
+}
+.fade-in-elementR {
+  animation: fade-intoR 2.4s;
+}

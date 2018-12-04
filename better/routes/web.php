@@ -17,3 +17,32 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('/pages.welcome');
 });
+Route::get('/Home', function () {
+    $data = array(
+        'title'=>'Services',
+        'services' =>['About','Store','Home']
+    );
+    $iCoffee = array(
+        'title'=>'Items',
+        'items' =>['About','Store','Home']
+    );
+    return view('pages.welcome')->with($data);
+});
+Route::get('/Store', function () {
+    $data = array(
+        'title'=>'Services',
+        'services' =>['About','Store','Home']
+    );
+    $iCoffee = array(
+        'title'=>'Items',
+        'items' =>['About','Store','Home']
+    );
+    return view('pages.about')->with($data);;
+});
+Route::get('/About', function () {
+    $data = array(
+        'title'=>'Services',
+        'services' =>['About','Store','Home']
+    );
+    return view('pages.about')->with($data);;
+});
