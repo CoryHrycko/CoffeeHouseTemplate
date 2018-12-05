@@ -323,6 +323,16 @@ body {
     top: 15px;
     right: 35px;
   }
+  .main {
+    display: block;
+    width: 75vw;
+  }
+  .imgInline {
+    margin-left: 0;
+  }
+  .writtingHome {
+    width: 85vw;
+  }
 }
 
 @media only screen and (min-width: 321px), (max-width: 424px) {
@@ -371,6 +381,16 @@ body {
     top: 15px;
     right: 35px;
   }
+  .main {
+    display: block;
+    width: 75vw;
+  }
+  .imgInline {
+    margin-left: 0;
+  }
+  .writtingHome {
+    width: 85vw;
+  }
 }
 
 @media only screen and (min-width: 425px), (max-width: 767px) {
@@ -418,6 +438,16 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  .main {
+    display: block;
+    width: 75vw;
+  }
+  .imgInline {
+    margin-left: 0;
+  }
+  .writtingHome {
+    width: 85vw;
   }
 }
 
@@ -471,6 +501,19 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  .main {
+    display: block;
+    width: 75vw;
+  }
+  .sneakyClose .Name .item, .sneakyClose .item, .sneakyCloseMessage .item, btn-submit {
+    width: 75vw;
+  }
+  .imgInline {
+    margin-left: 0;
+  }
+  .writtingHome {
+    width: 85vw;
   }
 }
 
