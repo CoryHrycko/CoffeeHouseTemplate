@@ -26,6 +26,7 @@ New Concord, OH</div>					</div>
 				</div>
 			</footer>
 			<script src="../../public/css/ScrollFadeIn.js"></script>
+			<script src="../../public/css/DropdownResponse.js"></script>
 
 </body>
 </html>
