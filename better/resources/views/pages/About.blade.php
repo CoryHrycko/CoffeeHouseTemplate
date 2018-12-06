@@ -24,7 +24,7 @@
                                 <source src="myVideo.webm" type="video/webm"/>
                             </video>
                         </header>
-                        <img class="aboutHeaderLogo hidden" src="https://chapmanscoffee.com/wp-content/uploads/2017/04/LOGO-1.png">
+                        <!-- <img class="aboutHeaderLogo hidden" src="https://chapmanscoffee.com/wp-content/uploads/2017/04/LOGO-1.png"> -->
                             <article class="main">
                                 <div class="left hidden">
                                 <h2 class="hidden">Our Approach</h2>

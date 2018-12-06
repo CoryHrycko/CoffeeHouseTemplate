@@ -17,5 +17,9 @@
         @endforeach
   </div>
 </div>
-<span class="openNav" onclick="openNav()">Chapman's Coffee House &#9776;</span>
+<div class="openNav" id="navbar" onclick="openNav()">
+
+<img class="navLogo hidden" src="https://chapmanscoffee.com/wp-content/uploads/2017/04/LOGO-1.png"> <!--Nav logo -->
+ <div class="openEr">Chapman's Coffee House &#9776;</div>
+</div>
 <div></div>

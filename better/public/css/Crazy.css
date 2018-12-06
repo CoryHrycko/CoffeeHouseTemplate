@@ -49,6 +49,20 @@ html, body {
   border-color: #159957;
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #474747;
+  outline: 1px solid slategrey;
+}
+
 html, body {
   background-color: #fff;
   color: #474747;
@@ -115,7 +129,7 @@ body {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin: "5vw 1vw";
 }
 
 .overlay a {
@@ -155,9 +169,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  padding: 90px 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background: #474747;
   z-index: 3;
   width: 100%;
@@ -165,6 +180,27 @@ body {
   font-size: 30px;
   cursor: pointer;
   color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: .8;
+}
+
+.navLogo {
+  width: 20vw;
+  height: 10vh;
+  text-align: left;
+}
+
+.openEr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-left: 50vw;
 }
 
 .aboutHeaderLogo {
@@ -213,10 +249,6 @@ body {
   position: relative;
 }
 
-.footer {
-  background: #474747;
-}
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,6 +295,23 @@ body {
 
 #main-footer {
   clear: both;
+}
+
+.containerFooter {
+  width: 1200px;
+  margin: auto;
+  border: black 1px solid;
+}
+
+.footer {
+  color: #fff;
+  background: #474747;
+  text-align: left;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 #myVideo {
