@@ -335,7 +335,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 321px), (max-width: 424px) {
+@media only screen and (max-width: 424px) {
   html {
     margin: 0;
   }
@@ -393,7 +393,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 425px), (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   html {
     margin: 0;
   }
@@ -451,17 +451,13 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px), (max-width: 980px) {
+@media only screen and (max-width: 1024px) {
   html {
     margin: 0;
   }
   .aboutHeaderLogo {
     width: 85vw;
-  }
-  .openNav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    top: 15%;
   }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
