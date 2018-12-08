@@ -144,6 +144,8 @@ body {
 
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .overlay .closebtn {
@@ -169,7 +171,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  padding: 90px 10px;
+  padding: 65px 10px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -183,6 +185,12 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: .8;
+}
+
+.openNav:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  color: #845007;
 }
 
 .navLogo {
@@ -300,18 +308,37 @@ body {
 .containerFooter {
   width: 1200px;
   margin: auto;
-  border: black 1px solid;
+  padding: 2rem;
 }
 
 .footer {
   color: #fff;
-  background: #474747;
+  background: #7f7f7f;
   text-align: left;
 }
 
 .footer a {
   color: #fff;
   text-decoration: none;
+}
+
+.bottomFooterContainer {
+  width: 100%;
+  text-align: center;
+  background: #474747;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  margin: auto;
+}
+
+.footerAdd {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #myVideo {
@@ -382,6 +409,23 @@ body {
   .writtingHome {
     width: 85vw;
   }
+  .openEr {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    margin-left: 2vw;
+  }
+  .navLogo {
+    width: 30vw;
+  }
+  .openNav {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 424px) {
@@ -439,6 +483,23 @@ body {
   }
   .writtingHome {
     width: 85vw;
+  }
+  .openEr {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    margin-left: 2vw;
+  }
+  .navLogo {
+    width: 30vw;
+  }
+  .openNav {
+    font-size: 1.3rem;
   }
 }
 
@@ -498,6 +559,23 @@ body {
   .writtingHome {
     width: 85vw;
   }
+  .openEr {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    margin-left: 2vw;
+  }
+  .navLogo {
+    width: 30vw;
+  }
+  .openNav {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -507,6 +585,9 @@ body {
   .aboutHeaderLogo {
     width: 85vw;
     top: 15%;
+  }
+  .openNav {
+    font-size: 1.3rem;
   }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -556,6 +637,9 @@ body {
   }
   .imgInline {
     margin-left: 0;
+  }
+  .navLogo {
+    width: 30vw;
   }
   .writtingHome {
     width: 85vw;

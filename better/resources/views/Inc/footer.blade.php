@@ -14,19 +14,20 @@
 			<div class="emailFooter">
 				<a href="mailto:info@chapmanscoffee.com">info@chapmanscoffee.com</a>
 			</div>
+			
 			<div class="hoursFooter">Weekdays: 7am - 6pm
 				<br>Saturday: 8am - 2pm
 				<br>Sunday: Closed
-				<div id="footer-bottom">
-					<div class="container clearfix">
-				<ul class="et-social-icons">
-	<li class="et-social-icon et-social-facebook">
-		<a href="http://facebook.com/chapmanscoffeehouse" class="icon">
+</div></div></div></div>
+				<div class="bottomFooterContainer">
+				<div class="footer-bottom">
+
+	<div id="footer-info">CHAPMAN'S COFFEE </div><div class="footerAdd">
+New Concord, OH</div>
+	<div class="iconFooter">
+		<a href="http://facebook.com/chapmanscoffeehouse" >
 			<span>Facebook</span>
-		</a>
-	</li>
-</ul><div id="footer-info">CHAPMAN'S COFFEE /
-New Concord, OH</div>					
+		</a></div></div>				
 	</div>
 	</div>
 	</footer>

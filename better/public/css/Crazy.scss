@@ -153,6 +153,7 @@ body{
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
+    transform: scale(1.1);
 }
 
 .overlay .closebtn {
@@ -172,7 +173,7 @@ body{
   .openNav{
     display: flex;
     position:fixed;
-    padding: 90px 10px;
+    padding: 65px 10px;
     justify-content: flex-start;
     background:$Text;
     z-index: 3;
@@ -183,6 +184,10 @@ body{
     color: $White;
     transition: 0.4s;
     opacity: .8;
+  }
+  .openNav:hover{
+    transform: scale(1.01);
+    color:$Accent;
   }
   
 //   .openNav span{
@@ -285,16 +290,31 @@ body{
 .containerFooter{
     width: 1200px;
     margin: auto;
-    border: black 1px solid;
+    padding: 2rem;
 }
 .footer {
     color: $White;
-    background: $Text;
+    background: $Primary;
     text-align: left;
   }
   .footer a{
       color: $White;
       text-decoration: none;
+  }
+  .bottomFooterContainer{
+    width:100%;
+    text-align: center;
+    background: $Text;
+  }
+  .footer-bottom{
+    display: flex;
+
+    width: 70vw;
+    margin: auto;
+  }
+  .footerAdd{
+    margin-left: auto;
+    margin-right: auto;
   }
 //----------------------------------------------------------Movie Section
 #myVideo{
@@ -357,6 +377,23 @@ body{
     .writtingHome{
         width: 85vw;
     }
+    .openEr {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+        -ms-grid-column-align: end;
+        justify-self: end;
+        margin-left: 2vw;
+    }
+    .navLogo {
+        width: 30vw;
+        }
+    .openNav {
+        font-size:1.3rem;
+    }
 }
 @media only screen and (max-width: 424px){
     html{
@@ -405,6 +442,23 @@ body{
     }
     .writtingHome{
         width: 85vw;
+    }
+    .openEr {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+        -ms-grid-column-align: end;
+        justify-self: end;
+        margin-left: 2vw;
+    }
+    .navLogo {
+        width: 30vw;
+        }
+    .openNav {
+        font-size:1.3rem;
     }
 }
 @media only screen and (max-width: 767px){
@@ -455,6 +509,23 @@ body{
     .writtingHome{
         width: 85vw;
     }
+    .openEr {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+        -ms-grid-column-align: end;
+        justify-self: end;
+        margin-left: 2vw;
+    }
+    .navLogo {
+        width: 30vw;
+        }
+    .openNav {
+        font-size:1.3rem;
+    }
 }
 @media only screen and (max-width: 1024px){
     html{
@@ -464,8 +535,9 @@ body{
         width: 85vw;
         top: 15%;
     }
-    // .openNav {
-    // }
+    .openNav {
+        font-size:1.3rem;
+    }
     .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
       }
@@ -506,6 +578,9 @@ body{
     .imgInline {
         margin-left: 0;
     }
+    .navLogo {
+        width: 30vw;
+        }
     .writtingHome{
         width: 85vw;
     }

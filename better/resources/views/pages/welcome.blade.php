@@ -18,8 +18,8 @@
                 <p class="hiddenR">Thank you for visiting Chapman’s Coffee House, online! Our coffee is now available for purchase here on our website, and can be shipped to yourself, or as a gift to a friend! We also have our food and drink menu available that we offer in-store at our  New Concord, Ohio location.        </article>
         </p>
         </div>
-<aside class="aside aside-1">Aside 1</aside>
-        <aside class="aside aside-2">Aside 2</aside>
+<aside class="aside aside-1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</aside>
+        <aside class="aside aside-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</aside>
     <footer class="footer">Footer</footer>
 </div>
         @endsection
